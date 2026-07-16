@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Hub | Mage Paadam Shalawe</title>
+    <style>
+        /* Modern Minimalist Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7fafc;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #63b3ed;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.9)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .btn {
+            background-color: #3182ce;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2b6cb0;
+        }
+
+        /* Subjects Section */
+        .main-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+            color: #1a365d;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 5px solid #3182ce;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #2b6cb0;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #718096;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a365d;
+            color: #a0aec0;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <h1>EduHub 📚</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Lessons</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h2>Gedara Idanma Igana Gamu!</h2>
+        <p>Oyalata ona karana kiyawana paadam, video sahitha prashna pathra okkoma ekama thanakin lesiyenma igana ganna.</p>
+        <a href="#lessons" class="btn">Paadam Balanna</a>
+    </section>
+
+    <!-- Subjects Grid -->
+    <main class="main-container" id="lessons">
+        <h2 class="section-title">Apige Wishayan (Subjects)</h2>
+        
+        <div class="grid">
+            <!-- Subject 1 -->
+            <div class="card">
+                <h3>Ganithaya (Mathematics)</h3>
+                <p>1 Wasiya sita 11 Wasiya dhakwa full syllabus thiyere saha short-notes methanin download karaganna.</p>
+                <a href="#" class="btn" style="padding: 8px 16px; font-size: 14px;">Notes Ganna</a>
+            </div>
+
+            <!-- Subject 2 -->
+            <div class="card">
+                <h3>Widhyaawa (Science)</h3>
+                <p>Amuthuma krama walata, practical video dharshana ekka lassanata Science igana ganna lamiuda.</p>
+                <a href="#" class="btn" style="padding: 8px 16px; font-size: 14px;">Start Learning</a>
+            </div>
+
+            <!-- Subject 3 -->
+            <div class="card">
+                <h3>Thakshana Wedhayawa (ICT)</h3>
+                <p>Coding, hardware saha computer advanced lessons mula idanma saralawa igana ganna thiyena course ekak.</p>
+                <a href="#" class="btn" style="padding: 8px 16px; font-size: 14px;">Lessons Enrol</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EduHub Online. All Rights Reserved. Created with ❤️</p>
+    </footer>
+
+</body>
+</html>
